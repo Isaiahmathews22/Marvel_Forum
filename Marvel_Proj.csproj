@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4C413F7-645A-405D-93D7-C70FD234BF29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Marvel_Proj</RootNamespace>
+    <AssemblyName>Marvel_Proj</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items.Designer.cs">
+      <DependentUpon>Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items.resx">
+      <DependentUpon>Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-marvel-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marvel background 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-grocery-store-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-black-panther-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-comics-67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hulk-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-iron-man-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-spiderman-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-thor-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-wolverine-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-geography-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-comics-magazine-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-comics-magazine-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-filled-heart-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-free-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tv-show-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-view-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-filled-heart-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-avengers-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiderman 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiderman 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black panther comic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hulk comic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marvel-zoom-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Panther Background 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minus-sign-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Panther Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marvel background 21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marvel shirt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avengers shirt 2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black pnather movie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wolverine movie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nene 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nene 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black panther comic2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thor movie.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
